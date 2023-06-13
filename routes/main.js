@@ -13,6 +13,7 @@ router.get('/api/getAllPhotos', getAllPhotos);
 router.get('/pages/home', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../front/index.html'));
 })
+//****change out
 router.get('/pages/gallery', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../front/gallery.html'));
 })
@@ -20,9 +21,6 @@ router.get('/pages/gallery', (req, res) => {
 router.get('/pages/contact', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../front/contact.html'));
 })
-
-
-
 
 
 
