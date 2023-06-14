@@ -1,11 +1,10 @@
 const express = require('express')
-const router = express.router()
+const router = express.Router()
 
 const albumrouter = require('./album')
 const photorouter = require('./main')
-const photo = require('../models/photo')
 
-router.use('/photo', photorouter)
-router.use('/album', albumrouter)
+router.use('/', photorouter)
+router.use('/', albumrouter)
 
 module.exports = router
