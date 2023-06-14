@@ -36,7 +36,9 @@ const main = async () => {
         {image: 'IMG_6898.jpg'}
         
     ]
+    await Photo.deleteMany()
     await Photo.insertMany(photos)
+    
     console.log('inserted some photos')
 }
 const run = async() => {
