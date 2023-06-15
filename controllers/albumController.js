@@ -25,5 +25,5 @@ const getAlbumByName = async (req, res) => {
 module.exports = {
     getAllAlbums,
     getAlbumByName
-
 };
+

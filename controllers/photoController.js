@@ -58,6 +58,8 @@ const deletePhoto = async (req, res) => {
     }
 }
 
+
+
 module.exports = {
     getAllPhotos,
     createPhoto,
