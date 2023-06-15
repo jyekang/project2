@@ -5,7 +5,7 @@ const Client = new Schema (
     {
         firstName: { type: String, required: true},
         lastName: { type: String, required: true },
-        album: [{ type: Schema.Types.ObjectId, ref: 'Album' }],
+        album: [{ type: Schema.Types.ObjectId, ref: 'Album', required: false }]
     },
     { timestamps: true }
 )
