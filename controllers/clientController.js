@@ -11,4 +11,4 @@ const getAllClients = async (req, res) => {
 
 module.exports = {
     getAllClients
-}
+};
