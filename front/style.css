@@ -27,3 +27,8 @@
     padding: 0 10px 0 10px;
     text-align: center;
   }
+
+  .YPphotos {
+    max-width: 500px;
+    max-height: 500px;
+  }

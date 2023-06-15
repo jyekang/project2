@@ -5,5 +5,6 @@ const path = require('path');
 
 
 router.get('/getAllAlbums', albumcontroller.getAllAlbums);
+router.get('/getAllAlbums/:albumName', albumcontroller.getAlbumByName);
 
 module.exports = router
