@@ -33,13 +33,33 @@ if (searchButton) {
     let photos = response.data.image
     let html = ""
     for ( const photo of photos) {
-      html += `<img class="YPphotos" src="/images/${photo.image}"/>`
+      html += 
+      `<div class="photo">
+      <button class="deleteButton" data-id="${photo._id}">delete</button>
+      <img class="YPphotos" src="/images/${photo.image}"/>
+      </div>
+      `
     }
     console.log(html)
     yourphotos.innerHTML = html
-  
-  })
+
+    const deleteButtons = document.getElementsByClassName('deleteButton')
+    for (const button of deleteButtons) {
+      button.addEventListener('click', deleteMe)
+    }
+  });
 }
+
+    const deleteMe = async (event) => {
+      const photoId = event.target.getAttribute('data-id')
+      try {
+        await axios.delete(`http://localhost:3002/api/getAllPhotos/${photoId}`)
+        event.target.parentElement.remove()
+      } catch (error) {
+        console.error(error)
+      }
+    };
+ 
 
 // const photos = getPhotos()
 // console.log(photos)
