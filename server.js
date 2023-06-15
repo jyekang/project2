@@ -13,11 +13,11 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
-
-const logger = require('morgan');
-app.use(logger('dev'))
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.json());
+app.use(express.json())
+// const logger = require('morgan');
+// app.use(logger('dev'))
 
 ////
 // front-end and backend routes
