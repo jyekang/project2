@@ -1,3 +1,7 @@
+/**************** All Pages *******************/
+
+
+
 .galleryimage {
     max-width: 500px;
     max-height: 500px;
@@ -11,7 +15,7 @@
   }
   
   .images {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -32,3 +36,87 @@
     max-width: 500px;
     max-height: 500px;
   }
+
+
+  /************** index.html ****************/
+  
+  
+  #homeimg1 {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    position: relative;
+  }
+  #homeintro {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+  }
+
+  #homeintro span {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  #homemid {
+    height: 600px;
+    background-color: rgba(217, 213, 213, 0.451);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  #homemid p {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  #displayphotos {
+
+  }
+
+  #selfintro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+
+  #homeimg2{
+    max-width: 35%;
+    height: auto;
+
+  }
+
+  #selfintro p {
+    font-size: 40px;
+    max-width: 55%;
+    margin-right: 50px;
+  }
+  #displayphotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.hpimg {
+    width: 23%; 
+    margin-bottom: 10px; 
+}
