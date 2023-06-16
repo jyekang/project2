@@ -161,3 +161,11 @@ input {
   width:200px;
   font-size: 18px;
 }
+
+
+/********** yourphotos.html ************/
+
+#YPmain {
+   background-color: rgba(252, 232, 207, 0.249);
+   height: 800px;
+}
