@@ -1,11 +1,14 @@
 /**************** All Pages *******************/
 
-
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
 .galleryimage {
     max-width: 500px;
     max-height: 500px;
-    flex: 0 0 calc(10% - 10px); /* Adjust the width as needed */
+    flex: 0 0 calc(10% - 10px); 
   margin-bottom: 20px;
 }
 .container {
@@ -21,15 +24,23 @@
   }
 
   .nav-bar {
-  
-    text-align: center;
-    
+    padding: 30px 0;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .nav-bar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333; 
   }
   
   li{
-    display: inline;
+    display: inline-block;
     padding: 0 10px 0 10px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 30px;
   }
 
   .YPphotos {
@@ -37,9 +48,31 @@
     max-height: 500px;
   }
 
+  .contact {
+    height: 80px;
+    /* background-color: rgba(252, 232, 207, 0.249); */
+    padding: 50px 0;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact p {
+    margin: 8px 0;
+  }
+
+  footer {
+    text-align: center;
+  }
 
   /************** index.html ****************/
   
+  header {
+    height: 80px;
+    /* background-color: rgba(252, 232, 207, 0.249); */
+    padding: 20px 0;
+  }
   
   #homeimg1 {
     max-width: 100%;
@@ -50,7 +83,7 @@
   }
   #homeintro {
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 50px;
     font-size: 30px;
   }
@@ -61,9 +94,9 @@
   }
 
   #homemid {
-    height: 600px;
+    height: 500px;
     background-color: rgba(217, 213, 213, 0.451);
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,18 +108,15 @@
     margin-left: 50px;
     margin-right: 50px;
   }
-  
-  #displayphotos {
-
-  }
 
   #selfintro {
+    background-color: rgba(217, 213, 213, 0.451);
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 60px;
   }
 
   #homeimg2{
@@ -119,4 +149,15 @@
 .hpimg {
     width: 23%; 
     margin-bottom: 10px; 
+}
+
+button {
+  padding: 8px 8px;
+  font-size: 14px;
+}
+
+input {
+  padding: 8px;
+  width:200px;
+  font-size: 18px;
 }
