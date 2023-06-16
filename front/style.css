@@ -168,4 +168,50 @@ input {
 #YPmain {
    background-color: rgba(252, 232, 207, 0.249);
    height: 800px;
+   padding-top: 10px;
+   border: 2px saddlebrown;
+}
+
+#YPSearch {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+h2 {
+  margin-left: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  width: 30%;
+  margin: 10px;
+}
+
+.YPphotos {
+  width: 100%;
+  max-height: 400px;
+}
+
+
+#galleryhtml {
+  background-color: rgba(252, 232, 207, 0.249);
+  height: 2300px;
+  padding-top: 10px;
+  border: 2px saddlebrown;
+}
+
+.galleryhtmlimg .photo-row {
+  margin-left: 20px;
+  margin-right: 20px;
 }
